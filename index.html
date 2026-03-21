@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* ANTI ERROR */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #dcdcdc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    overflow-x: hidden;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0;
+    background: #eee;
+    border-radius: 25px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+/* KIRI & KANAN (HP DEFAULT) */
+.left, .right {
+    width: 100%;
+    padding: 20px;
+}
+
+/* KIRI */
+.left {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.left img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.left h1 {
+    font-size: 36px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.left p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* KANAN */
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* BUTTON */
+.btn {
+    background: #cfd8dc;
+    padding: 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #333;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #b0bec5;
+}
+
+/* ICON */
+.btn i {
+    font-size: 20px;
+}
+
+/* DESKTOP */
+@media (min-width: 600px) {
+    .left, .right {
+        width: 50%;
+    }
+
+    .left {
+        border-bottom: none;
+        border-right: 1px solid #ccc;
+    }
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- KIRI -->
+    <div class="left">
+        <img src="img/foto.jpg" alt="foto">
+        <h1>Mikhaila</h1>
+        <p>
+            Proyek telur setengah matang.<br>
+            Gak update gambar.
+        </p>
+    </div>
+
+    <!-- KANAN -->
+    <div class="right">
+
+        <a href="https://wa.me/6281554551099" target="_blank" class="btn">
+            WhatsApp
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="https://instagram.com/kaelklz" target="_blank" class="btn">
+            Instagram
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="games.html" class="btn">
+            Games
+            <i class="fa-solid fa-gamepad"></i>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

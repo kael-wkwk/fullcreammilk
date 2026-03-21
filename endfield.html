@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arknights: Endfield</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #dcdcdc;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* WRAPPER */
+.wrapper {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto; /* dari 80px → 20px */
+
+    background: #eee;
+    padding: 20px;
+    border-radius: 20px;
+
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* IMAGE */
+img {
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* TITLE */
+h2 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+/* ID BOX */
+.id-box {
+    background: #cfd8dc;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* BUTTON */
+.copy-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #90a4ae;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.copy-btn:hover {
+    background: #78909c;
+}
+
+/* LINK KEMBALI */
+a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        max-width: 320px;
+        padding: 15px;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+    <img src="img/endfield.jpg">
+    <h2>Arknights: Endfield</h2>
+
+    <div class="id-box" id="gameID">
+        ID: 4311864963
+    </div>
+
+    <button class="copy-btn" onclick="copyID()">Copy ID</button>
+
+    <p><a href="games.html">← Kembali</a></p>
+</div>
+
+<script>
+function copyID() {
+    var text = document.getElementById("gameID").innerText;
+    navigator.clipboard.writeText(text);
+    alert("ID berhasil disalin!");
+}
+</script>
+
+</body>
+</html>

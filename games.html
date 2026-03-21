@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Saya</title>
+
+<style>
+
+/* ANTI ERROR */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #dcdcdc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    overflow-x: hidden;
+}
+
+/* WRAPPER */
+.wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #eee;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* HEADER */
+.header {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #cfd8dc;
+    padding: 6px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.header h1 {
+    text-align: center;
+    margin: 0;
+    color: #555;
+}
+
+/* GRID */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+/* ITEM */
+.item {
+    text-decoration: none;
+    color: #333;
+}
+
+.item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    object-fit: cover;
+    background: #cfd8dc;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.item img:hover {
+    transform: scale(1.1);
+    background: #b0bec5;
+}
+
+.item p {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="header">
+        <a href="index.html" class="back-btn">←</a>
+        <h1>Mainin ini</h1>
+    </div>
+
+    <div class="container">
+
+        <a href="ml.html" class="item">
+            <img src="img/ml.jpg">
+            <p>Mobile Legends</p>
+        </a>
+
+        <a href="hsr.html" class="item">
+            <img src="img/hsr.jpg">
+            <p>Honkai: Star Rail</p>
+        </a>
+
+        <a href="zzz.html" class="item">
+            <img src="img/zzz.jpg">
+            <p>Zenless Zone Zero</p>
+        </a>
+
+        <a href="wuwa.html" class="item">
+            <img src="img/wuwa.jpg">
+            <p>Wuthering Waves</p>
+        </a>
+
+        <a href="endfield.html" class="item">
+            <img src="img/endfield.jpg">
+            <p>Arknights: Endfield</p>
+        </a>
+
+        <a href="mla.html" class="item">
+            <img src="img/mla.jpg">
+            <p>ML: Adventure</p>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

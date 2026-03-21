@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #dcdcdc;
+}
+
+/* KOTAK UTAMA */
+.wrapper {
+    width: 95%;
+    max-width: 1000px;
+
+    background: #eee;
+    border-radius: 25px;
+    padding: 20px;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* HEADER */
+.header {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* JUDUL */
+.header h1 {
+    text-align: center;
+    margin: 0;
+    color: #555;
+}
+
+/* TOMBOL BACK */
+.back-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    background: #cfd8dc;
+    padding: 10px 16px;
+    border-radius: 12px;
+
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.header {
+    position: relative !important;
+}
+
+.back-btn:hover {
+    background: #b0bec5;
+    transform: scale(1.1);
+}
+
+/* GRID GAME */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 25px;
+    text-align: center;
+}
+
+/* ITEM GAME */
+.item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+    background: #cfd8dc;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.item img:hover {
+    transform: scale(1.1);
+    background: #b0bec5;
+}
+
+/* NAMA GAME */
+.item p {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #555;
+}
+
+/* RESPONSIVE */
+.wrapper {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.container {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 20px;
+    }
+
+    .item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .item p {
+        font-size: 12px;
+    }
+}
+
+/* HEADER */
+.header {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* TOMBOL KEMBALI */
+.back-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background: #cfd8dc;
+    padding: 6px 12px;
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #b0bec5;
+}
+
+/* JUDUL TENGAH */
+.header h1 {
+    text-align: center;
+    margin: 0;
+    color: #555;
+}
